@@ -1,1 +1,0 @@
-# Abedinsokolii.github.io
