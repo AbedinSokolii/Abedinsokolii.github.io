@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins:ital@1&family=Sacramento&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+/* header here*/
+header{
+display:flex;
+position: relative;
+color: beige;
+}
+
+
+
+
+
+
+
+
+body
+{
+
+    display: flex;
+    justify-content: left;
+    margin-left: 2.3rem;
+    background-color: #18122B;
+    color: #EEEEEE;
+  
+}
+.My-first-js h1{
+    margin-top: 100px;
+   font-size: 1.4rem;
+   font-weight: 700;
+   margin-bottom: 1.3rem;
+   color: #A084DC;
+   
+}
+.text{
+    
+    margin-top: 0;
+    display: inline-block;
+    margin-right: 30rem;
+}
+.No-decoration-link{
+    text-decoration: underline;
+}
+a:active{
+    color: #A084DC;
+}
+a:hover{
+    cursor:pointer;
+    color: #A084DC;
+}
+.hidden{
+    display:none;
+}
+.firstjs{
+    margin-right: 2rem;
+     width: 500px ;
+     height: 500px;
+
+}
+.secondjs{
+    padding-top: 50px;
+  
+    width: 750px;
+    height: 500px;
+}
+@media (max-width: 700px) {
+    .My-first-js{
+        margin-right: 50px;
+    }
+    .My-first-js h1{
+
+        margin-top: 100px;
+       font-size: 1.4rem;
+       font-weight: 700;
+       margin-bottom: 1.3rem;
+       color: #A084DC;
+       
+    }
+    .text{
+    
+        margin-top: 0;
+        display: inline-block;
+        margin-right: 3rem;
+        font-size: 1rem;
+    }
+    .hidden{
+        display:none;
+    }
+    .secondjs{
+
+        padding-top: 50px;
+      
+        width: 500px;
+        height: 350px;
+    }
+    
+}
+@media (min-width: 700px) and (max-width: 900px){
+
+    .My-first-js {
+        margin-right: 50px;
+      }
+      
+      .My-first-js h1 {
+        font-size: 1.2rem;
+        margin-top: 50px;
+        margin-bottom: 1rem;
+      }
+      
+      .text{
+    
+        margin-top: 0;
+        display: inline-block;
+        margin-right: 3rem;
+        font-size: 1rem;
+    }
+    .hidden{
+        display:none;
+    }
+      
+      .secondjs {
+        width: 80%;
+        height: auto;
+      }
+
+}

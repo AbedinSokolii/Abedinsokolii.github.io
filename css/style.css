@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins:ital@1&family=Sacramento&display=swap');
+html {
+    scroll-behavior: smooth;
+  }
+*{
+    Margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+body{
+    background-color: #18122B;
+    color: #EEEEEE;
+    
+}
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:20px 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    position: relative;
+    font-size: 30px;
+    color: #635985;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+/* animation*/
+.logo::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #18122B;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+
+}
+@keyframes showRight{
+    100%{
+        width: 0;
+    }
+}
+/*animation*/
+.nav-bar a {
+    font-size: 22px;
+    color: #645CBB;
+    text-decoration: none;
+   font-weight: 500;
+   margin-left: 25px;
+    transition: .3s;
+
+}
+.nav-bar a:hover
+{
+    color: #A084DC;
+}
+
+/* @media */
+
+
+
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 7%;
+}
+.home-content{
+  
+    max-width: 550px;
+}
+.home-content h1{
+    font-size:50px;
+    font-weight: 700;
+}
+.home-content h3{
+    font-size: 30px;
+    font-weight: 700;
+    color: #A084DC;
+}
+.home-content p {
+    font-size: 1rem;
+    margin: 20px 0 40px;
+    line-height:1.2em ;
+
+
+}
+.home-content .btn-box{
+    display: flex;
+    justify-content: space-between;
+width: 300px;
+height: 50px;
+
+}
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    width: 150px;
+    height: 100%;
+    background: #645CBB;
+    border: 2px solid #645CBB;
+    border-radius:6px ;
+    font-size: 19px;
+    color: #A084DC;
+    text-decoration: none;
+    font-weight: 600;
+    word-spacing: 1px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow:hidden;
+}
+.btn-box a::before{
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 100;
+ 
+    width:0;
+    height: 100%;
+    background:#18122B;
+    z-index: -1;
+    transition: .3s;
+}
+.btn-box a:hover::before{
+    width:100% ;
+}
+.btn-box a:hover{
+    
+    border: outset 2px solid #A084DC;
+    box-shadow:  0 0 10px 0 #A084DC inset, 
+                 0 0 10px 4px #A084DC;
+                 border-radius: 10px;
+                 transition: .5s;
+}
+
+/* 
+.myself img{
+    display:flex;
+    z-index: -1;
+    width: 20rem;
+    height: 30rem;
+text-align: right;
+position: relative;
+
+margin-left: 200px;
+
+
+}
+*/
+
+/* For something that i did't finish copy this down
+ <div class="energy">        
+            <span style="--ctr:#fbad04;--i:18px;--d:2.5s;"></span>
+            <span style="--ctr:#03a1d9;--i:13px;--d:5s;"></span>
+            <span style="--ctr:#f7036d;--i:15px;--d:7.5s;"></span>
+            <span style="--ctr:#93ff16;--i:20px;--d:10s;"></span>      
+        
+        </div>
+
+*/
+.not-finished{
+    display: flex;
+    position: relative;
+    word-spacing: 2px;
+    margin-bottom: 5rem;
+}
+
+.energy
+{
+    font-weight: 700;
+    margin-bottom: 100px;
+    margin-left: 200px;
+    position: relative;
+    width: 300px;
+    height: 300px;    
+}
+
+.energy span
+{
+    position: absolute;
+    width: calc(300px + var(--i));
+    height: calc(300px + var(--i));
+    background: var(--ctr);
+    border-radius: 50%;
+    transform-origin: calc(100px + var(--i));  
+    animation: animate 5s linear infinite;
+    animation-duration: calc(var(--d));
+    mix-blend-mode: plus-lighter;   
+    filter: blur(30px);   
+}
+
+.energy span:nth-child(even) 
+{
+    animation-direction: reverse;       
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);    
+
+    }
+    100%
+     {
+       transform: rotate(360deg);      
+    }
+}
+
+
+/*for something i dint finish copy this up */
+.skills-hoverings{
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100vh;
+}
+ul {
+    width: 80rem;
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    align-items: center;
+    list-style-type: none;
+  }
+  
+  ul li {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 200px;
+    height: 200px;
+  }
+  
+  li .base {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 8px solid var(--color);
+    border-left: 8px solid transparent;
+    animation: spin 8s linear infinite;
+    filter: drop-shadow(0 0 10px var(--color));
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotateX(60deg) rotateZ(0);
+    }
+    100% {
+      transform: rotateX(60deg) rotateZ(-360deg);
+    }
+  }
+  
+  li .base::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    top: 9px;
+    left: 9px;
+    border-radius: 50%;
+    background-color: var(--color);
+  }
+  
+  li .base,
+  li .title,
+  li .icon {
+    position: absolute;
+    color: #b5b5b5;
+    transform: rotateX(60deg) rotateZ(-45deg);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  
+  li .title {
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transform: rotateY(30deg) skewY(-24deg) translateY(0px);
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  li .icon {
+    display: grid;
+    place-items: center;
+    font-size: 80px;
+    height: 100%;
+    pointer-events: none;
+  }
+  
+  @keyframes wave {
+    0%,
+    100% {
+      margin-bottom: 0;
+    }
+    50% {
+      margin-bottom: 15px;
+    }
+  }
+  
+  .base:hover {
+    filter: drop-shadow(0 0 10px var(--color));
+    animation-play-state: paused;
+  }
+  
+  .base:hover + .title + .icon {
+    transform: rotateY(30deg) skewY(-24deg) translateY(-160px);
+    color: var(--color);
+    filter: drop-shadow(0 0 3px var(--color));
+    animation: wave 1s ease-in-out infinite;
+  }
+  
+  .base:hover + .title {
+    color: var(--color);
+    transform: rotateY(30deg) skewY(-24deg) translateY(-90px);
+    text-shadow: 0 0 3px var(--color);
+    transition-delay: 0.1s;
+    opacity: 1;
+    animation: wave 1s ease-in-out infinite;
+  }
+  .full-contact{
+margin: 0;
+padding: 0;
+text-align: center;
+font-size: 3rem;
+
+  }
+  
+
+  /*///             @media                                            //*/
+  /* Style for screens smaller than 600px */
+@media (max-width: 600px) {
+    body {
+      margin: 0;
+    }
+    .home-content h1{
+        font-size: 30px;
+    }
+    .home-content h3{
+        font-size: 20px;
+    }
+    .home-content p{
+        font-size: 0.6rem;
+    }
+    .energy span{
+        height: 30px ;
+        width: 30px ;
+       
+    }
+    .energy {margin-bottom: 0;
+    margin-left: 0;
+    position: absolute;
+}
+li .base{
+    width: 50%;
+    height: 50%;
+    border: none;
+
+}
+li .base::after{
+    position: none;
+    display: none;
+}
+ul li{
+    width: 100px;
+    height: 100px;
+}
+li .title{
+    font-size: 18px;
+}
+.skills-hoverings{
+    height: 600px;
+    width: 400px;
+  }
+  .logo{
+    font-size: 1rem;
+  }
+  .nav-bar a{
+    font-size: 1rem;
+
+  }
+  }
+  
+  /* Style for screens between 600px and 900px */
+  @media (min-width: 600px) and (max-width: 900px) {
+    body {
+        margin: 0;
+      }
+      .home-content h1{
+          font-size: 30px;
+      }
+      .home-content h3{
+          font-size: 20px;
+      }
+      .home-content p{
+          font-size: 0.6rem;
+      }
+      .energy span{
+          height: 30px ;
+          width: 30px ;
+         
+      }
+      .energy {margin-bottom: 0;
+      margin-left: 0;
+      position: absolute;
+    }
+
+    li .base{
+        width: 50%;
+        height: 50%;
+        border: none;
+    
+    }
+    li .base::after{
+        position: none;
+        display: none;
+    }
+    ul li{
+        margin-left: 8rem;
+        width: 100px;
+        height: 100px;
+    }
+    li .title{
+        font-size: 18px;
+    }
+    .skills-hoverings{
+      height: 600px;
+      width: 600px;
+    }
+  
+    
+  }
+ 
+  
