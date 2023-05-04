@@ -16,12 +16,18 @@
 <body>
     <header>
         <a class="logo">Portfolio</a>
-        <nav class="nav-bar">
-            <a href="#skills-hoverings" class="active">Skills</a>
-            <a class="Smoth" href="#contact">Accounts</a>
-            <a href="project.html">Project</a>
+        <div class="hamburger"><a class="bx-navigation"> <ion-icon name="menu-outline"></ion-icon></a></div>
+        <nav class="full-header hide">
+          <a class="remove full-hiden "><ion-icon name="close-outline"></ion-icon></a>
+        <nav class="nav-bar ">
+          
+            <a href="#skills-hoverings" class="active bx-right-indent">Skills</a>
+            <a class="Smoth bx-right-indent" href="#contact">Accounts</a>
+            <a href="project.html" class="bx-right-indent">Project</a>
+          
   
         </nav>
+      </nav>
     </header>
     <section class="home">
         <div class="home-content">
@@ -95,13 +101,14 @@
     </section>
 
     <footer class="full-contact" id="contact">
-        <a target="_blank" href="https://github.com/AbedinSokolii"><span><ion-icon name="logo-github"></ion-icon></span></a>
-        <a target="_blank" href="https://www.linkedin.com/in/abedin-sokoli-3a20a1269/">
+        <a id="icones" target="_blank" href="https://github.com/AbedinSokolii"><span><ion-icon name="logo-github"></ion-icon></span></a>
+        <a id="icones" target="_blank" href="https://www.linkedin.com/in/abedin-sokoli-3a20a1269/">
           <span><ion-icon name="logo-linkedin"></ion-icon></span> </a>
-        <a target="_blank" href="https://www.instagram.com/thesokoli/"> <span><ion-icon name="logo-instagram"></ion-icon></span>
+        <a id="icones" target="_blank" href="https://www.instagram.com/thesokoli/"> <span><ion-icon name="logo-instagram"></ion-icon></span>
         </a>
 
     </footer>
       
 </body>
+<script src="script.js"></script>
 </html>
